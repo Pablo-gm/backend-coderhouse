@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Papel",                                                                                                                          
+        "price": 11.58,                                                                                                                                     
+        "thumbnail": "https://via.placeholder.com/150",
+        "id": 1
+    },
+    {
+        "title": "Calculadora",                                                                                                                          
+        "price": 1341.18,                                                                                                                                     
+        "thumbnail": "https://via.placeholder.com/150",
+        "id": 2
+    },
+    {
+        "title": "Pluma",                                                                                                                          
+        "price": 431.47,                                                                                                                                     
+        "thumbnail": "https://via.placeholder.com/150",
+        "id": 3
+    }
+]
