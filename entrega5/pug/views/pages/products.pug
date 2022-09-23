@@ -1,0 +1,30 @@
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title=Productos
+        link(href="./css/bootstrap.min.css" rel="stylesheet")
+    body.bg-light
+        div(class="container py-3")
+            include ../partials/navigation.pug
+
+            div(class="row justify-content-center")
+                div(class="col-12 col-lg-6")
+                    h4 Catálogo
+                    if productos.length > 0
+                        table(class="table table-striped")
+                            thead
+                                tr.table-dark
+                                    th.w-100 Nombre
+                                    th.text-end Precio
+                                    th.text-center Imagen
+                            tbody
+                                each producto in productos
+                                    tr.align-middle
+                                        td= producto.title
+                                        td.text-end= producto.price
+                                        td.text-center
+                                            img(src=producto.thumbnail alt=producto.title)
+                    else
+                        div(class="alert alert-warning" role="alert") No se encontraron productos

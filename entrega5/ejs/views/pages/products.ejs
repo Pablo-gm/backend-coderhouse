@@ -1,0 +1,39 @@
+<%- include('../partials/header') %>
+<body class="bg-light">
+    <div class="container py-3">
+        <%- include('../partials/navigation') %>
+        <main>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <h4>Catalogo</h4>
+                    <% if (productos.length){ %>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr class="table-dark">
+                                    <th class="w-100">Nombre</th>
+                                    <th class="text-end">Precio</th>
+                                    <th class="text-center">Imagen</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% productos.forEach(function(producto){ %>
+                                <tr class="align-middle">
+                                    <td class=""><%= producto.title %></td>
+                                    <td class="text-end"><%= producto.price %></td>
+                                    <td class="text-center"><img src="<%= producto.thumbnail %>" alt="<%= producto.thumbnail %>"></td>
+                                </tr>
+                                <% }); %>
+                            </tbody>
+                        </table>
+                    <% }else{ %>
+                        <div class="alert alert-warning" role="alert">
+                            No se encontraron productos
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
