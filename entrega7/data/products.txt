@@ -1,0 +1,1 @@
+[{"id":1,"nombre":"nombreProducto1","descripcion":"la descripcion2","codigo":"1231232","foto":"https://via.placeholder.com/150","precio":"5.612","stock":"802","timestamp":1665007502324}]
