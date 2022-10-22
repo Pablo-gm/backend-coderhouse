@@ -1,0 +1,58 @@
+// Utilizando Mongo Shell, crear una base de datos llamada ecommerce que contenga dos colecciones: mensajes y productos.
+use ecommerce
+db.createCollection("mensajes")
+db.createCollection("productos")
+
+// 1. Agregar 10 documentos con valores distintos a las colecciones mensajes y productos. El formato de los documentos debe estar en correspondencia con el que venimos utilizando en el entregable con base de datos MariaDB. 
+db.mensajes.insertMany([{email: 'mail1@dominio.com', text: 'texto1', date: '1666462881441'},{email: 'mail2@dominio.com', text: 'texto2', date: '1666462881442'},{email: 'mail3@dominio.com', text: 'texto3', date: '1666462881443'},{email: 'mail4@dominio.com', text: 'texto4', date: '1666462881444'},{email: 'mail5@dominio.com', text: 'texto5', date: '1666462881445'},{email: 'mail6@dominio.com', text: 'texto6', date: '1666462881446'},{email: 'mail7@dominio.com', text: 'texto7', date: '1666462881447'},{email: 'mail8@dominio.com', text: 'texto8', date: '1666462881448'},{email: 'mail9@dominio.com', text: 'texto9', date: '1666462881449'},{email: 'mail10@dominio.com', text: 'texto10', date: '1666462881450'}])
+
+// 2. Definir las claves de los documentos en relación a los campos de las tablas de esa base. En el caso de los productos, poner valores al campo precio entre los 100 y 5000 pesos(eligiendo valores intermedios, ej: 120, 580, 900, 1280, 1700, 2300, 2860, 3350, 4320, 4990). 
+db.productos.insertMany([
+    {title: 'producto1', price: 100, thumbnail: 'url1' },
+    {title: 'producto2', price: 1200, thumbnail: 'url2'},
+    {title: 'producto3', price: 1300, thumbnail: 'url3' },
+    {title: 'producto4', price: 2400, thumbnail: 'url4'},
+    {title: 'producto5', price: 2500, thumbnail: 'url5'},
+    {title: 'producto6', price: 3600, thumbnail: 'url6'},
+    {title: 'producto7', price: 3700, thumbnail: 'url7'},
+    {title: 'producto8', price: 4800, thumbnail: 'url8' },
+    {title: 'producto9', price: 4900, thumbnail: 'url9'},
+    {title: 'producto10', price: 5000, thumbnail: 'url10'}
+])
+
+// 3. Listar todos los documentos en cada colección.
+db.mensajes.find()
+db.productos.find()
+
+// 4. Mostrar la cantidad de documentos almacenados en cada una de ellas.
+db.mensajes.estimatedDocumentCount()
+db.productos.estimatedDocumentCount()
+
+/*
+5. Realizar un CRUD sobre la colección de productos:
+    - Agregar un producto más en la colección de productos 
+    - Realizar una consulta por nombre de producto específico:
+        + Listar los productos con precio menor a 1000 pesos.
+        + Listar los productos con precio entre los 1000 a 3000 pesos.
+        + Listar los productos con precio mayor a 3000 pesos.
+        + Realizar una consulta que traiga sólo el nombre del tercer producto más barato.
+    - Hacer una actualización sobre todos los productos, agregando el campo stock a todos ellos con un valor de 100.
+    - Cambiar el stock a cero de los productos con precios mayores a 4000 pesos. 
+    - Borrar los productos con precio menor a 1000 pesos 
+*/
+db.productos.insertOne({title: 'producto11', price: 1110, thumbnail: 'url11' })
+
+db.productos.find({title: 'producto1'})
+db.productos.find({price: {$lt: 1000}})
+db.productos.find({$and: [{price: {$gte: 1000}},{price: {$lte: 3000}}]})
+db.productos.find({price: {$gt: 3000}})
+db.productos.find().sort({price: 1}).skip(2).limit(1)
+
+db.productos.updateMany({},{$set: {stock: 100}})
+
+db.productos.updateMany({price: {$gt: 4000}},{$set: {stock: 0}})
+
+db.productos.deleteMany({price: {$lt: 1000}})
+
+// 6. Crear un usuario 'pepe' clave: 'asd456' que sólo pueda leer la base de datos ecommerce. Verificar que pepe no pueda cambiar la información.
+db.createUser({user: 'pepe', pwd: 'asd456', roles: [{role: 'read', db: 'ecommerce'}]})

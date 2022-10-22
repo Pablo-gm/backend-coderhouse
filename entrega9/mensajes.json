@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae1c"
+  },
+  "email": "mail1@dominio.com",
+  "text": "texto1",
+  "date": "1666462881441"
+},{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae1d"
+  },
+  "email": "mail2@dominio.com",
+  "text": "texto2",
+  "date": "1666462881442"
+},{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae1e"
+  },
+  "email": "mail3@dominio.com",
+  "text": "texto3",
+  "date": "1666462881443"
+},{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae1f"
+  },
+  "email": "mail4@dominio.com",
+  "text": "texto4",
+  "date": "1666462881444"
+},{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae20"
+  },
+  "email": "mail5@dominio.com",
+  "text": "texto5",
+  "date": "1666462881445"
+},{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae21"
+  },
+  "email": "mail6@dominio.com",
+  "text": "texto6",
+  "date": "1666462881446"
+},{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae22"
+  },
+  "email": "mail7@dominio.com",
+  "text": "texto7",
+  "date": "1666462881447"
+},{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae23"
+  },
+  "email": "mail8@dominio.com",
+  "text": "texto8",
+  "date": "1666462881448"
+},{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae24"
+  },
+  "email": "mail9@dominio.com",
+  "text": "texto9",
+  "date": "1666462881449"
+},{
+  "_id": {
+    "$oid": "6354355d7b58a65cf4fdae25"
+  },
+  "email": "mail10@dominio.com",
+  "text": "texto10",
+  "date": "1666462881450"
+}]

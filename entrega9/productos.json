@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "63543d287b58a65cf4fdae31"
+  },
+  "title": "producto2",
+  "price": 1200,
+  "thumbnail": "url2",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "63543d287b58a65cf4fdae32"
+  },
+  "title": "producto3",
+  "price": 1300,
+  "thumbnail": "url3",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "63543d287b58a65cf4fdae33"
+  },
+  "title": "producto4",
+  "price": 2400,
+  "thumbnail": "url4",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "63543d287b58a65cf4fdae34"
+  },
+  "title": "producto5",
+  "price": 2500,
+  "thumbnail": "url5",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "63543d287b58a65cf4fdae35"
+  },
+  "title": "producto6",
+  "price": 3600,
+  "thumbnail": "url6",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "63543d287b58a65cf4fdae36"
+  },
+  "title": "producto7",
+  "price": 3700,
+  "thumbnail": "url7",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "63543d287b58a65cf4fdae37"
+  },
+  "title": "producto8",
+  "price": 4800,
+  "thumbnail": "url8",
+  "stock": 0
+},{
+  "_id": {
+    "$oid": "63543d287b58a65cf4fdae38"
+  },
+  "title": "producto9",
+  "price": 4900,
+  "thumbnail": "url9",
+  "stock": 0
+},{
+  "_id": {
+    "$oid": "63543d287b58a65cf4fdae39"
+  },
+  "title": "producto10",
+  "price": 5000,
+  "thumbnail": "url10",
+  "stock": 0
+},{
+  "_id": {
+    "$oid": "635440457b58a65cf4fdae3a"
+  },
+  "title": "producto11",
+  "price": 1110,
+  "thumbnail": "url11",
+  "stock": 100
+}]
