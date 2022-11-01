@@ -1,0 +1,26 @@
+https://github.com/EstebanDem/backend-coderhouse/blob/master/Entrega-10/src/config/db.js
+
+// importar segun variable de entorno
+https://github.com/Alfacoy/CoderHouse-Backend/blob/main/src/daos/index.js
+
+
+
+
+
+https://github.com/EstebanDem/backend-coderhouse/blob/master/Entrega-25/src/controllers/product.controller.js
+
+
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose
+https://github.com/Lucapandolfelli/proyecto-final-desarrollo-backend-coderhouse
+
+https://github.com/estebanzarate/curso-backend-coder/tree/main/clase20-dbaas_firebase/segunda_entrega_proyecto_final/controllers
+
+https://github.com/GBarlocco/eCommerce-NodeJs/blob/master/dataBase/crudMongoDB/crudProductos.js
+
+
+// prometedores
+https://github.com/Lucapandolfelli/proyecto-final-desarrollo-backend-coderhouse/blob/master/db/productos.json
+https://github.com/Lucapandolfelli/proyecto-final-desarrollo-backend-coderhouse/blob/master/src/daos/productos/ProductosDaoMongoDb.js
+
+
+https://github.com/danilamdev/proyecto-final-backend/blob/main/backend/src/models/producto.js
