@@ -5,19 +5,19 @@ Tomando con base el proyecto que vamos realizando, agregar un parámetro más en
 
 - Agregar en la vista info, el número de procesadores presentes en el servidor.
 
-![Vista info](/preview/infoCPU.png)
+![Vista info](preview/infoCPU.png)
 
 - Ejecutar el servidor (modos FORK y CLUSTER) con nodemon verificando el número de procesos tomados por node.
 
 ```c
 nodemon index.js -p 8080 -m FORK
 ```
-![Nodemon FORK](/preview/nodemonFork.png)
+![Nodemon FORK](preview/nodemonFork.png)
 
 ```c
 nodemon index.js -p 8080 -m CLUSTER
 ```
-![Nodemon CLUSTER](/preview/nodemonCluster.png)
+![Nodemon CLUSTER](preview/nodemonCluster.png)
 
 - Ejecutar el servidor (con los parámetros adecuados) utilizando Forever, verificando su correcta operación. Listar los procesos por Forever y por sistema operativo.
 
@@ -27,7 +27,7 @@ forever start index.js  -p 8081
 forever list
 forever stopall
 ```
-![Forever list](/preview/foreverList.png)
+![Forever list](preview/foreverList.png)
 
 - Ejecutar el servidor (con los parámetros adecuados: modo FORK) utilizando PM2 en sus modos modo fork y cluster. Listar los procesos por PM2 y por sistema operativo.
 
@@ -36,7 +36,7 @@ pm2 start index.js --name="ServerFORK" -- -p 8081
 pm2 start index.js --name="ServerCLUSTER" -i 4 -- -p 8082
 pm2 delete all
 ```
-![pm2 list](/preview/pm2list.png)
+![pm2 list](preview/pm2list.png)
 
 Nota: si se quiere activar el modo cluster con pm2 se debe pasar el parámetro como *pm2 start index.js --name="ServerFORK" -- -p 8081 -m CLUSTER*
 
