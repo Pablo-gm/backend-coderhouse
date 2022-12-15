@@ -1,0 +1,266 @@
+Statistical profiling result from sin-v8.log, (1615 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   1378   85.3%          C:\WINDOWS\SYSTEM32\ntdll.dll
+    230   14.2%          C:\Program Files\nodejs\node.exe
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      4    0.2%   57.1%  LazyCompile: *resolve node:path:158:10
+      1    0.1%   14.3%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      1    0.1%   14.3%  LazyCompile: *toNamespacedPath node:path:618:19
+      1    0.1%   14.3%  Function: ^normalize node:path:304:12
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+      7    0.4%  100.0%  JavaScript
+      0    0.0%    0.0%  C++
+     12    0.7%  171.4%  GC
+   1608   99.6%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1378   85.3%  C:\WINDOWS\SYSTEM32\ntdll.dll
+     22    1.6%    C:\Program Files\nodejs\node.exe
+      1    4.5%      LazyCompile: ~u C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\pt_PT\name\female_prefix.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\pt_PT\name\female_prefix.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    4.5%      LazyCompile: ~s C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\ur\address\index.js:1:259
+      1  100.0%        LazyCompile: ~r C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\ur\address\index.js:1:432
+      1  100.0%          Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\ur\address\index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+      1    4.5%      LazyCompile: ~s C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\en_AU\address\default_country.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\en_AU\address\default_country.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    4.5%      LazyCompile: ~l C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\pl\team\name.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\pl\team\name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    4.5%      LazyCompile: ~get C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\id_ID\name\female_first_name.js:1:324
+      1  100.0%        LazyCompile: ~get C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\id_ID\name\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\id_ID\name\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    4.5%      LazyCompile: ~get C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\fr_CA\address\index.js:1:368
+      1  100.0%        LazyCompile: ~get C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\fr_CA\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\fr_CA\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    4.5%      LazyCompile: ~get C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\fr_BE\internet\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\fr_BE\internet\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    4.5%      LazyCompile: ~get C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\fr\company\name_patterns.js:1:324
+      1  100.0%        LazyCompile: ~get C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\fr\company\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\fr\company\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    4.5%      LazyCompile: ~get C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\cz\company\noun.js:1:324
+      1  100.0%        LazyCompile: ~get C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\cz\company\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\cz\company\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    4.5%      LazyCompile: ~b C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\ge\phone_number\formats.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\ge\phone_number\formats.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    4.5%      LazyCompile: ~Document.$__setSchema C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\mongoose\lib\document.js:3439:43
+      1  100.0%        LazyCompile: ~compile C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\mongoose\lib\model.js:5013:33
+      1  100.0%          LazyCompile: ~Mongoose._model C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\mongoose\lib\index.js:613:37
+      1  100.0%            LazyCompile: ~Mongoose.model C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\mongoose\lib\index.js:542:36
+      1    4.5%      Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\ur\vehicle\fuel.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    4.5%      Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\pl\music\index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    4.5%      Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\nl\name\male_first_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    4.5%      Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\he\cell_phone\index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    4.5%      Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\fr_CH\animal\insect.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    4.5%      Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\en\name\first_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    4.5%      Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\en\animal\bird.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    4.5%      Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\@faker-js\faker\dist\cjs\locales\az\company\prefix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    4.5%      Function: ^stringify C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\response.js:1145:20
+      1  100.0%        Function: ^json C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\response.js:250:25
+      1  100.0%          Function: ^<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\router\othersRouter.js:16:26
+      1  100.0%            Function: ^handle C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\router\layer.js:86:49
+      1    4.5%      Function: ^randomBytes node:internal/crypto/random:90:21
+      1  100.0%        Function: ^randomBytesSync C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\random-bytes\index.js:72:25
+      1  100.0%          Function: ^uidSync C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\uid-safe\index.js:75:18
+      1  100.0%            Function: ^generateSessionId C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express-session\index.js:518:27
+      1    4.5%      Function: ^parse C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\content-type\index.js:106:16
+      1  100.0%        Function: ^setCharset C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\utils.js:248:41
+      1  100.0%          Function: ^send C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\response.js:111:25
+      1  100.0%            Function: ^json C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\response.js:250:25
+     15    1.1%    LazyCompile: *stat node:internal/modules/cjs/loader:151:14
+      7   46.7%      Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      4   57.1%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      4  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      4  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3   42.9%        Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      3  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      7   46.7%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      7  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      7  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      7  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      1    6.7%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+
+    230   14.2%  C:\Program Files\nodejs\node.exe
+    178   77.4%    C:\Program Files\nodejs\node.exe
+     62   34.8%      Function: ^compileFunction node:vm:308:25
+     31   50.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+     31  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     23   74.2%            LazyCompile: *Module.load node:internal/modules/cjs/loader:963:33
+      8   25.8%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+     31   50.0%        Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+     30   96.8%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+     29   96.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    3.3%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    3.2%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     15    8.4%      Function: ^realpathSync node:fs:2410:22
+     14   93.3%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+     13   92.9%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      9   69.2%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      4   30.8%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1    7.1%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    6.7%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      9    5.1%      Function: ^stat node:internal/modules/cjs/loader:151:14
+      6   66.7%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      4   66.7%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      4  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2   33.3%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3   33.3%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      6    3.4%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   16.7%          LazyCompile: ~lazyLoadStreams node:fs:2843:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:2986:17
+      1   16.7%          Function: ~<anonymous> node:internal/child_process:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   16.7%          Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   16.7%          Function: ~<anonymous> node:https:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   16.7%          Function: ~<anonymous> node:http2:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   16.7%          Function: ~<anonymous> node:crypto:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    2.8%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      3   60.0%        Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2   40.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      2  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      4    2.2%      C:\Program Files\nodejs\node.exe
+      1   25.0%        LazyCompile: ~parse C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\content-type\index.js:106:16
+      1  100.0%          LazyCompile: ~setCharset C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\utils.js:248:41
+      1  100.0%            LazyCompile: ~send C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\response.js:111:25
+      1   25.0%        Function: ~<anonymous> C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\stack-trace\lib\stack-trace.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1   25.0%        Function: ^FastBuffer node:internal/buffer:958:14
+      1  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%            Function: ^allocate node:buffer:397:18
+      1   25.0%        Function: ^<anonymous> node:internal/fs/utils:357:35
+      1  100.0%          Function: ^<anonymous> node:internal/fs/utils:668:38
+      1  100.0%            Function: ^realpathSync node:fs:2410:22
+      3    1.7%      LazyCompile: *resolve node:path:158:10
+      1   33.3%        LazyCompile: *Module.load node:internal/modules/cjs/loader:963:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      1   33.3%        LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:583:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   33.3%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      2    1.1%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+      2  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1   50.0%          LazyCompile: *Module.load node:internal/modules/cjs/loader:963:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%          Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2    1.1%      Function: ^readSync node:fs:684:18
+      1   50.0%        LazyCompile: *readFileSync node:fs:450:22
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1   50.0%        Function: ^tryReadSync node:fs:429:21
+      1  100.0%          Function: ^readFileSync node:fs:450:22
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      2    1.1%      Function: ^openSync node:fs:576:18
+      2  100.0%        Function: ^readFileSync node:fs:450:22
+      2  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1   50.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:963:33
+      1   50.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      2    1.1%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+      2  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+      2  100.0%          Function: ^Socket._writeGeneric node:net:769:42
+      2  100.0%            Function: ^Socket._write node:net:806:35
+      2    1.1%      Function: ^end node:_http_outgoing:833:45
+      2  100.0%        Function: ^end C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express-session\index.js:250:27
+      2  100.0%          Function: ^send C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\response.js:111:25
+      2  100.0%            Function: ^json C:\Users\Pablo\Desktop\Courses\CoderBackend\entrega16\node_modules\express\lib\response.js:250:25
+      2    1.1%      Function: ^closeSync node:fs:526:19
+      2  100.0%        Function: ^readFileSync node:fs:450:22
+      2  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1   50.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      9    3.9%    LazyCompile: *compileFunction node:vm:308:25
+      9  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+      9  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      9  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      8   88.9%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1   11.1%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      3    1.3%    LazyCompile: *stat node:internal/modules/cjs/loader:151:14
+      2   66.7%      Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1   50.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%        Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   33.3%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+
