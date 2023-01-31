@@ -16,22 +16,34 @@ http://localhost:8080/graphql
 ```
 
 Query para todos los productos:
+
 ![Vista query1](preview/query1.png)
 
+
 Query para un producto:
+
 ![Vista query2](preview/query2.png)
 
+
 Mutation para agregar un producto:
+
 ![Vista mutation1](preview/mutation1.png)
 
+
 Mutation para actualizar el producto:
+
 ![Vista mutation2](preview/mutation2.png)
 
+
 Query para revisar el producto actualizado:
+
 ![Vista query2](preview/query3.png)
 
+
 Mutation para borrar el producto:
+
 ![Vista mutation3](preview/mutation3.png)
+
 
 ### Notas:
 Para iniciar el proyecto en modo cluster se usa:
